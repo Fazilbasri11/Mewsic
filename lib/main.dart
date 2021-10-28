@@ -51,13 +51,21 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               //foto
-              Container(
-                margin: EdgeInsets.all(20),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Image.network("https://picsum.photos/400/200"),
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    
+                  });
+                },
+                child: AnimatedContainer(
+                  duration: Duration(seconds: 1),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                  ) ,
+                  child: Image.network("https://picsum.photos/400/200",),
                 ),
               ),
+             const Divider(),
              //row detail
               Container(
                 margin: EdgeInsets.only(left: 20.0, right: 20),
