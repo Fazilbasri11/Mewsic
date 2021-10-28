@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:faker/faker.dart';
+import 'dart:math';
 
 main(List<String> args) {
   runApp(MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  Random random = Random();
   var faker = new Faker();
   String pesan = "Tambeh yok";
 
@@ -28,10 +30,13 @@ class _MyAppState extends State<MyApp> {
                 margin: EdgeInsets.all(20),
                 child: Text(
                   "Jalan Lagi",
-                  style: TextStyle(fontSize: 30, color: Colors.blue),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Color.fromARGB(255, random.nextInt(256),
+                          random.nextInt(256), random.nextInt(256))),
                 ),
               ),
-             //search
+              //search
               Container(
                 margin: EdgeInsets.only(left: 20.0, right: 20),
                 width: double.infinity,
@@ -50,25 +55,28 @@ class _MyAppState extends State<MyApp> {
                       border: InputBorder.none),
                 ),
               ),
+              const Divider(),
               //foto
-              GestureDetector(
-                onTap: (){
-                  setState(() {
-                    
-                  });
-                },
-                child: AnimatedContainer(
-                  duration: Duration(seconds: 1),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                  ) ,
-                  child: Image.network("https://picsum.photos/400/200",),
+              Container(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {});
+                  },
+                  child: AnimatedContainer(
+                    duration: Duration(seconds: 1),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Image.network(
+                      "https://picsum.photos/400/200",
+                    ),
+                  ),
                 ),
               ),
-             const Divider(),
-             //row detail
+              const Divider(),
+              //row detail
               Container(
-                margin: EdgeInsets.only(left: 20.0, right: 20),
+                margin: EdgeInsets.only(left: 10.0, right: 10),
                 height: 40,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -176,26 +184,11 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               const Divider(),
-              //tambah chat
+              //chat
               Container(
-                child: Column(
-                  children: [
-                    Text(pesan),
-                    RaisedButton(
-                        child: Text("Tambah chat"),
-                        onPressed: () {
-                          setState(() {
-                            pesan = "chat telah ditambah";
-                          });
-                        })
-                  ],
-                ),
-              ),
-             //chat
-             Container(
                 child: ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
-                  itemCount: 20,
+                  itemCount: 10,
                   shrinkWrap: true,
                   itemBuilder: (BuildContext context, int index) {
                     return ChatItem(
