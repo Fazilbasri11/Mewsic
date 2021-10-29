@@ -15,212 +15,465 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Random random = Random();
   var faker = new Faker();
-  String pesan = "Tambeh yok";
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(fontFamily: 'Poppins'),
-        home: Scaffold(
-          body: ListView(
-            children: [
-              //title
-              Container(
-                margin: EdgeInsets.all(20),
-                child: Text(
-                  "Jalan Lagi",
-                  style: TextStyle(
-                      fontSize: 30,
-                      color: Color.fromARGB(255, random.nextInt(256),
-                          random.nextInt(256), random.nextInt(256))),
-                ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Poppins'),
+      home: Scaffold(
+        body: ListView(
+          children: [
+            Container(
+              child: Image.network(
+                "https://picsum.photos/500/300",
               ),
-              //search
-              Container(
-                margin: EdgeInsets.only(left: 20.0, right: 20),
-                width: double.infinity,
-                height: 50,
-                decoration: BoxDecoration(
-                    color: Color(0xFFe9eaec),
-                    borderRadius: BorderRadius.circular(15)),
-                child: TextField(
-                  cursorColor: Color(0xFF000000),
-                  decoration: InputDecoration(
-                      prefixIcon: Icon(
-                        Icons.search,
-                        color: Color(0xFF000000).withOpacity(0.5),
-                      ),
-                      hintText: "Search",
-                      border: InputBorder.none),
-                ),
-              ),
-              const Divider(),
-              //foto
-              Container(
-                child: GestureDetector(
-                  onTap: () {
-                    setState(() {});
-                  },
-                  child: AnimatedContainer(
-                    duration: Duration(seconds: 1),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Image.network(
-                      "https://picsum.photos/400/200",
-                    ),
-                  ),
-                ),
-              ),
-              const Divider(),
-              //row detail
-              Container(
-                margin: EdgeInsets.only(left: 10.0, right: 10),
-                height: 40,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
+            ),
+            //title
+            Container(
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.blue,
+                      margin: EdgeInsets.all(20),
+                      child: Text(
+                        "History",
+                        style: TextStyle(color: Colors.black54, fontSize: 28),
                       ),
-                      width: 100,
-                      child: Center(
-                        child: Text(
-                          "Indonesia",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 15.0,
                     ),
                     Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.red,
+                      margin: EdgeInsets.only(right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 20),
+                            child: Icon(
+                              Icons.notifications_none_outlined,
+                              size: 30.0,
+                            ),
+                          ),
+                          Icon(
+                            Icons.settings_outlined,
+                            size: 30.0,
+                          )
+                        ],
                       ),
-                      child: Center(
-                        child: Text(
-                          "Indonesia",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                    ),
+                  ]),
+            ),
+
+            //row detail
+            Container(
+              margin: EdgeInsets.only(left: 20),
+              height: 180,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
                         ),
-                      ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
                     ),
-                    const SizedBox(
-                      width: 15.0,
-                    ),
-                    Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.yellow,
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Indonesia",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
                         ),
-                      ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
                     ),
-                    const SizedBox(
-                      width: 15.0,
-                    ),
-                    Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.green,
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Indonesia",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
                         ),
-                      ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
                     ),
-                    const SizedBox(
-                      width: 15.0,
-                    ),
-                    Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.pink,
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Indonesia",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
                         ),
-                      ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
                     ),
-                    const SizedBox(
-                      width: 15.0,
-                    ),
-                    Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.grey,
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Indonesia",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              const Divider(),
-              //chat
-              Container(
-                child: ListView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  itemCount: 10,
-                  shrinkWrap: true,
-                  itemBuilder: (BuildContext context, int index) {
-                    return ChatItem(
-                        imageUrl: "https://picsum.photos/id/$index/200/300",
-                        title: faker.person.name(),
-                        subtitle: faker.lorem.sentence());
-                  },
-                ),
+            ),
+            //recomended
+            Container(
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 20),
+                      child: Text(
+                        "Recomended",
+                        style: TextStyle(color: Colors.black54, fontSize: 28),
+                      ),
+                    ),
+                  ]),
+            ),
+
+            Container(
+              margin: EdgeInsets.only(left: 20),
+              height: 180,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ));
-  }
-}
+            ),
+            //Mostpopular
+            Container(
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 20),
+                      child: Text(
+                        "Most Popular",
+                        style: TextStyle(color: Colors.black54, fontSize: 28),
+                      ),
+                    ),
+                  ]),
+            ),
+            //row detail
+            Container(
+              margin: EdgeInsets.only(left: 20),
+              height: 180,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 120,
+                          height: 120,
+                          color: Colors.red,
+                          child: Image.network(
+                            "https://picsum.photos/120/120",
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
-class ChatItem extends StatelessWidget {
-  String imageUrl;
-  final String title;
-  final String subtitle;
-
-  ChatItem(
-      {required this.imageUrl, required this.title, required this.subtitle});
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundImage: NetworkImage(imageUrl),
+            //artis
+            Container(
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 20),
+                      child: Text(
+                        "Artis",
+                        style: TextStyle(color: Colors.black54, fontSize: 28),
+                      ),
+                    ),
+                  ]),
+            ),
+            //rartis bulet
+            Container(
+              margin: EdgeInsets.only(left: 20, top: 10),
+              height: 180,
+              child: Row(
+                children: [
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        new Container(
+                            width: 120.0,
+                            height: 120.0,
+                            decoration: new BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: new DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: new NetworkImage(
+                                        "https://picsum.photos/100/100")))),
+                        new Text("John Doe")
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        new Container(
+                            width: 120.0,
+                            height: 120.0,
+                            decoration: new BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: new DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: new NetworkImage(
+                                        "https://picsum.photos/100/100")))),
+                        new Text("John Doe")
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
-      title: Text(title),
-      subtitle: Text(subtitle),
-      trailing: Text("10:22 pm"),
     );
   }
 }
