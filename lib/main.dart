@@ -65,8 +65,8 @@ class _MyAppState extends State<MyApp> {
 
             //row detail
             Container(
-              margin: EdgeInsets.only(left: 20),
-              height: 180,
+              margin: EdgeInsets.only(left: 15),
+              height: 220,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -75,11 +75,11 @@ class _MyAppState extends State<MyApp> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -92,19 +92,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -117,19 +116,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -142,19 +140,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -165,6 +162,9 @@ class _MyAppState extends State<MyApp> {
                                 style: TextStyle(fontSize: 12)))
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    width: 15,
                   ),
                 ],
               ),
@@ -185,8 +185,10 @@ class _MyAppState extends State<MyApp> {
             ),
 
             Container(
-              margin: EdgeInsets.only(left: 20),
-              height: 180,
+              margin: EdgeInsets.only(
+                left: 15,
+              ),
+              height: 220,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -195,11 +197,11 @@ class _MyAppState extends State<MyApp> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -212,19 +214,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -237,19 +238,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -262,19 +262,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -285,6 +284,9 @@ class _MyAppState extends State<MyApp> {
                                 style: TextStyle(fontSize: 12)))
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    width: 15,
                   ),
                 ],
               ),
@@ -305,8 +307,8 @@ class _MyAppState extends State<MyApp> {
             ),
             //row detail
             Container(
-              margin: EdgeInsets.only(left: 20),
-              height: 180,
+              margin: EdgeInsets.only(left: 15),
+              height: 220,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -315,11 +317,11 @@ class _MyAppState extends State<MyApp> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -332,19 +334,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -357,19 +358,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -382,19 +382,18 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 120,
-                          height: 120,
-                          color: Colors.red,
+                          width: 160,
+                          height: 160,
+                          color: Colors.grey,
                           child: Image.network(
-                            "https://picsum.photos/120/120",
+                            "https://picsum.photos/160/160",
                           ),
                         ),
                         Container(
@@ -405,6 +404,9 @@ class _MyAppState extends State<MyApp> {
                                 style: TextStyle(fontSize: 12)))
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    width: 15,
                   ),
                 ],
               ),
@@ -424,19 +426,19 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ]),
             ),
-            //rartis bulet
             Container(
-              margin: EdgeInsets.only(left: 20, top: 10),
-              height: 180,
-              child: Row(
+              margin: EdgeInsets.only(left: 15),
+              height: 220,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         new Container(
-                            width: 120.0,
-                            height: 120.0,
+                            width: 160.0,
+                            height: 160.0,
                             decoration: new BoxDecoration(
                                 shape: BoxShape.circle,
                                 image: new DecorationImage(
@@ -448,16 +450,15 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   SizedBox(
-                    width: 35,
-                    height: 35,
+                    width: 15,
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         new Container(
-                            width: 120.0,
-                            height: 120.0,
+                            width: 160.0,
+                            height: 160.0,
                             decoration: new BoxDecoration(
                                 shape: BoxShape.circle,
                                 image: new DecorationImage(
@@ -468,12 +469,197 @@ class _MyAppState extends State<MyApp> {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        new Container(
+                            width: 160.0,
+                            height: 160.0,
+                            decoration: new BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: new DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: new NetworkImage(
+                                        "https://picsum.photos/100/100")))),
+                        new Text("John Doe")
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        new Container(
+                            width: 160.0,
+                            height: 160.0,
+                            decoration: new BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: new DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: new NetworkImage(
+                                        "https://picsum.photos/100/100")))),
+                        new Text("John Doe")
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
                 ],
               ),
             ),
+            //Album
+            Container(
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 20),
+                      child: Text(
+                        "Album",
+                        style: TextStyle(color: Colors.black54, fontSize: 28),
+                      ),
+                    ),
+                  ]),
+            ),
+            //row detail
+            Container(
+              margin: EdgeInsets.only(left: 15),
+              height: 220,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 160,
+                          height: 160,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff7c94b6),
+                            image: const DecorationImage(
+                              image: NetworkImage(
+                                  'https://picsum.photos/160/160'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 160,
+                          height: 160,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff7c94b6),
+                            image: const DecorationImage(
+                              image: NetworkImage(
+                                  'https://picsum.photos/160/160'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 160,
+                          height: 160,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff7c94b6),
+                            image: const DecorationImage(
+                              image: NetworkImage(
+                                  'https://picsum.photos/160/160'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                 Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 160,
+                          height: 160,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff7c94b6),
+                            image: const DecorationImage(
+                              image: NetworkImage(
+                                  'https://picsum.photos/160/160'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        Container(
+                            child: Text("Judul Lagu",
+                                style: TextStyle(fontSize: 16))),
+                        Container(
+                            child: Text("Albam baru ini",
+                                style: TextStyle(fontSize: 12)))
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                ],
+              ),
+            ),
+            //rartis bulet
           ],
         ),
       ),
     );
   }
 }
+
